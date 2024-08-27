@@ -1,0 +1,39 @@
+.title {
+    font-size: 2.125rem; /* Convert 34px to rem manually */
+    font-weight: 900;
+}
+
+@media (max-width: 768px) { /* Replace $mantine-breakpoint-sm with an actual value */
+    .title {
+        font-size: 1.5rem; /* Convert 24px to rem manually */
+    }
+}
+
+.description {
+    max-width: 37.5rem; /* Convert 600px to rem manually */
+    margin: auto;
+}
+
+.description::after {
+    content: '';
+    display: block;
+    background-color: var(--mantine-color-blue-filled);
+    width: 2.8125rem; /* Convert 45px to rem manually */
+    height: 0.125rem; /* Convert 2px to rem manually */
+    margin-top: var(--mantine-spacing-sm);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card {
+    border: 0.0625rem solid #ccc; /* Adjust colors manually or leave as needed */
+}
+
+.cardTitle::after {
+    content: '';
+    display: block;
+    background-color: var(--mantine-color-blue-filled);
+    width: 2.8125rem; /* Convert 45px to rem manually */
+    height: 0.125rem; /* Convert 2px to rem manually */
+    margin-top: var(--mantine-spacing-sm);
+}
